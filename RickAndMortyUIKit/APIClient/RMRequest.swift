@@ -36,6 +36,8 @@ final class RMRequest {
         return URL(string: urlString)
     }
 
+    public let httpMethod: String = "GET"
+
     public init(endpoint: RMEndpoint, pathComponents: [String] = [], queryItems: [URLQueryItem] = []) {
         self.endpoint = endpoint
         self.pathComponents = pathComponents
